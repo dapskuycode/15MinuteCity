@@ -29,12 +29,19 @@ function MapComponent() {
           console.log('🔄 Tidak ada data di DB, mengambil dari ORS...');
           const coords = await fetchIsochrone(lat, lng);
           setPolygonCoords(coords);
-          setPublicServices([]); // kosongkan fasilitas
 
           const searchId = await savePointToDatabase(lat, lng);
           if (searchId) {
             await saveZoneToDatabase(searchId, coords);
             console.log('🆕 Titik dan polygon baru disimpan');
+
+            // Ambil fasilitas publik setelah polygon berhasil disimpan
+            const services = await getPublicServicesInZone(searchId);
+            setPublicServices(services);
+          } else {
+            // Kalau gagal simpan titik, tetap coba ambil fasilitas berdasarkan polygon langsung (tanpa ID)
+            const services = await getPublicServicesFromPolygon(coords);
+            setPublicServices(services);
           }
         }
       },
@@ -125,6 +132,25 @@ function MapComponent() {
       return [];
     }
   }
+  
+  async function getPublicServicesFromPolygon(coords) {
+    try {
+      const polygonGeoJSON = {
+        type: "Polygon",
+        coordinates: [[...coords.map(([lat, lng]) => [lng, lat])]],
+      };
+
+      const res = await api.post('/public-services/in-polygon', {
+        polygon: polygonGeoJSON,
+      });
+
+      return res.data.data;
+    } catch (err) {
+      console.error('Gagal ambil fasilitas (polygon langsung):', err.response?.data || err.message);
+      return [];
+    }
+  }
+
 
   return (
     <MapContainer
