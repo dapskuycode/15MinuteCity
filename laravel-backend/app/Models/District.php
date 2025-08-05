@@ -6,9 +6,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class District extends Model
 {
-    protected $casts = [
-        'boundary_polygon' => 'array', // jika simpan dalam bentuk GeoJSON string (opsional)
-        'center_point' => 'array',
+    protected $table = 'districts';
+    protected $fillable = [
+        'name',
+        'persentase_penduduk',
+        'kepadatan_penduduk_per_km2',
+        'polygon'
     ];
 
+    protected $casts = [
+        'polygon' => 'json', // kalau polygon disimpan dalam format GeoJSON string
+    ];
+
+    public function kelurahans()
+    {
+        return $this->hasMany(Kelurahan::class, 'district_id');
+    }
 }

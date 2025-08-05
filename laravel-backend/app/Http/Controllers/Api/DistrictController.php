@@ -3,63 +3,66 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\District;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DistrictController extends Controller
 {
-    public function index()
-    {
-        return response()->json(District::all());
-    }
-
-    public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'name' => 'required|string|max:100',
-            'district_code' => 'nullable|string|max:10',
-            'area_km2' => 'nullable|numeric',
-            'population' => 'nullable|integer',
-            'population_density' => 'nullable|numeric',
-            'boundary_polygon' => 'nullable', // tipe geometry, bisa WKT/GeoJSON
-            'center_point' => 'nullable',     // tipe point, bisa WKT/GeoJSON
-        ]);
-
-        $district = District::create($validated);
-
-        return response()->json($district, 201);
-    }
-
+    /**
+     * Tampilkan detail district beserta kelurahannya (dengan polygon)
+     */
     public function show($id)
     {
-        $district = District::findOrFail($id);
+        // Ambil district dengan GeoJSON polygon
+        $district = DB::table('districts')
+            ->select(
+                'id',
+                'name',
+                'persentase_penduduk',
+                'kepadatan_penduduk_per_km2',
+                DB::raw('ST_AsGeoJSON(polygon)::json as polygon')
+            )
+            ->where('id', $id)
+            ->first();
+
+        if (!$district) {
+            return response()->json(['message' => 'District not found'], 404);
+        }
+
+        // Ambil kelurahan terkait dengan GeoJSON polygon
+        $kelurahans = DB::table('kelurahans')
+            ->select(
+                'id',
+                'name',
+                'district_id',
+                DB::raw('ST_AsGeoJSON(polygon)::json as polygon')
+            )
+            ->where('district_id', $id)
+            ->get();
+
+        $district->kelurahans = $kelurahans;
+
         return response()->json($district);
     }
 
-    public function update(Request $request, $id)
+    /**
+     * Tampilkan detail district tanpa polygon (ringkas)
+     */
+    public function detail($id)
     {
-        $district = District::findOrFail($id);
+        $district = DB::table('districts')
+            ->select(
+                'id',
+                'name',
+                'persentase_penduduk',
+                'kepadatan_penduduk_per_km2'
+            )
+            ->where('id', $id)
+            ->first();
 
-        $validated = $request->validate([
-            'name' => 'sometimes|required|string|max:100',
-            'district_code' => 'nullable|string|max:10',
-            'area_km2' => 'nullable|numeric',
-            'population' => 'nullable|integer',
-            'population_density' => 'nullable|numeric',
-            'boundary_polygon' => 'nullable',
-            'center_point' => 'nullable',
-        ]);
-
-        $district->update($validated);
+        if (!$district) {
+            return response()->json(['message' => 'District not found'], 404);
+        }
 
         return response()->json($district);
-    }
-
-    public function destroy($id)
-    {
-        $district = District::findOrFail($id);
-        $district->delete();
-
-        return response()->json(['message' => 'Deleted successfully']);
     }
 }

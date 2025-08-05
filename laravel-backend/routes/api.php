@@ -8,6 +8,14 @@ use App\Http\Controllers\Api\WalkabilityZoneController;
 use App\Http\Controllers\Api\ServiceImageController;
 use App\Http\Controllers\Api\ServiceReviewController;
 use App\Http\Controllers\Api\DistrictController;
+use App\Http\Controllers\Api\KelurahanController;
+
+// District
+Route::get('/districts/{id}', [DistrictController::class, 'show']); // detail + polygon
+Route::get('/districts/{id}/detail', [DistrictController::class, 'detail']); // detail tanpa polygon
+
+// Kelurahan
+Route::get('/kelurahans/{id}', [KelurahanController::class, 'show']);
 
 
 Route::get('/test-api', function () {
