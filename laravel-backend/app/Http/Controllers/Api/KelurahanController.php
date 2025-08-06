@@ -28,4 +28,22 @@ class KelurahanController extends Controller
 
         return response()->json($kelurahan);
     }
+
+    public function showInfo($id)
+    {
+        $kelurahan = DB::table('kelurahans')
+            ->select(
+                'id',
+                'name',
+                'district_id',
+            )
+            ->where('id', $id)
+            ->first();
+
+        if (!$kelurahan) {
+            return response()->json(['message' => 'Kelurahan not found'], 404);
+        }
+
+        return response()->json($kelurahan);
+    }
 }

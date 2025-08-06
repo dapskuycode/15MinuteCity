@@ -16,7 +16,7 @@ Route::get('/districts/{id}/detail', [DistrictController::class, 'detail']); // 
 
 // Kelurahan
 Route::get('/kelurahans/{id}', [KelurahanController::class, 'show']);
-
+Route::get('/kelurahans/{id}/detail', [KelurahanController::class, 'showInfo']); // detail tanpa polygon
 
 Route::get('/test-api', function () {
     return response()->json(['message' => 'API Works!']);
