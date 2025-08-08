@@ -8,6 +8,22 @@ use Illuminate\Support\Facades\DB;
 class KelurahanController extends Controller
 {
     /**
+     * Mencari ID kelurahan bedasarkan nama
+     */
+    public function showByName($name)
+    {
+        $kelurahanId = DB::table('kelurahans')
+            // Menggunakan REPLACE untuk membuang 'Kelurahan ' dari nama sebelum membandingkan.
+            ->whereRaw("LOWER(REPLACE(name, 'Kelurahan ', '')) = ?", [strtolower($name)])
+            ->value('id');
+
+        if (!$kelurahanId) {
+            return response()->json(['message' => 'Kelurahan not found'], 404);
+        }
+
+        return $this->show($kelurahanId);
+    }
+    /**
      * Tampilkan detail kelurahan dengan polygon
      */
     public function show($id)
@@ -17,7 +33,7 @@ class KelurahanController extends Controller
                 'id',
                 'name',
                 'district_id',
-                DB::raw('ST_AsGeoJSON(polygon)::json as polygon')
+                DB::raw('ST_AsGeoJSON(polygon) as polygon_geojson')
             )
             ->where('id', $id)
             ->first();
@@ -25,6 +41,8 @@ class KelurahanController extends Controller
         if (!$kelurahan) {
             return response()->json(['message' => 'Kelurahan not found'], 404);
         }
+
+        $kelurahan->polygon = json_decode($kelurahan->polygon_geojson);
 
         return response()->json($kelurahan);
     }

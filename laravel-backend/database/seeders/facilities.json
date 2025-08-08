@@ -1,0 +1,386 @@
+[
+  {
+    "name": "RS St. Elisabeth Semarang",
+    "category": "Kesehatan",
+    "description": "Rumah Sakit di Jl. Kawi No.1",
+    "address": "Jl. Kawi No.1, Tegalsari",
+    "lat": -6.991,
+    "lng": 110.423
+  },
+  {
+    "name": "Puskesmas Karangkidul",
+    "category": "Kesehatan",
+    "description": "Puskesmas di Jl. Karangkidul No.15",
+    "address": "Jl. Karangkidul No.15",
+    "lat": -6.994,
+    "lng": 110.428
+  },
+  {
+    "name": "Apotek Simpang Lima",
+    "category": "Kesehatan",
+    "description": "Apotek 24 Jam",
+    "address": "Jl. Pahlawan No. 1",
+    "lat": -6.992,
+    "lng": 110.424
+  },
+  {
+    "name": "UNDIP Tembalang",
+    "category": "Pendidikan",
+    "description": "Universitas Diponegoro Kampus Tembalang",
+    "address": "Jl. Prof. Soedarto, Tembalang",
+    "lat": -7.051,
+    "lng": 110.439
+  },
+  {
+    "name": "Masjid Sabilul Jannah",
+    "category": "Ibadah",
+    "description": "Masjid Sabilul Jannah",
+    "address": "Jl. Candi Pawon Sel. XIII, Kalipancur, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50183",
+    "lat": -7.0163817,
+    "lng": 110.3864921
+  },
+  {
+    "name": "Klinik Saka Sasmitra",
+    "category": "Kesehatan",
+    "description": "Klinik Saka Sasmitra",
+    "address": "Jl. Kimar I No.249, Pandean Lamper, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50249",
+    "lat": -6.9986426,
+    "lng": 110.4407421
+  },
+  {
+    "name": "Masjid Nurul Huda",
+    "category": "Ibadah",
+    "description": "Masjid Nurul Huda",
+    "address": "Jl. Lontar, Karangtempel, Kec. Semarang Tim., Kota Semarang, Jawa Tengah 50232",
+    "lat": -6.9884282,
+    "lng": 110.4353066
+  },
+  {
+    "name": "SMA Laboratorium UPGRIS",
+    "category": "Pendidikan",
+    "description": "SMA Laboratorium UPGRIS",
+    "address": "Jl. Gajah Raya No.40, Siwalan, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50162",
+    "lat": -6.9831962,
+    "lng": 110.4486474
+  },
+  {
+    "name": "Masjid Jami Al Jihad",
+    "category": "Ibadah",
+    "description": "Masjid Jami Al Jihad",
+    "address": "Jl. Jagalan, Gabahan, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50135",
+    "lat": -6.9798456,
+    "lng": 110.4286212
+  },
+  {
+    "name": "Klinik Masjid Raya Candi Lama",
+    "category": "Kesehatan",
+    "description": "Klinik Masjid Raya Candi Lama",
+    "address": "Jl. Dr. Wahidin No.109, Kaliwiru, Kec. Candisari, Kota Semarang, Jawa Tengah 50253",
+    "lat": -7.0188697,
+    "lng": 110.4251544
+  },
+  {
+    "name": "SD Islam Al Huda",
+    "category": "Pendidikan",
+    "description": "SD Islam Al Huda",
+    "address": "Jl. Tumpang Raya No.103a, Petompon, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah 50237",
+    "lat": -7.0050931,
+    "lng": 110.3982814
+  },
+  {
+    "name": "Mushola Al-Hikmah",
+    "category": "Ibadah",
+    "description": "Mushola Al-Hikmah",
+    "address": "Jl. Dwarawati Tengah No.12, Krobokan, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50141",
+    "lat": -6.972232,
+    "lng": 110.3986422
+  },
+  {
+    "name": "Posyandu Nusa Indah",
+    "category": "Kesehatan",
+    "description": "Posyandu Nusa Indah",
+    "address": "Jl. Kawi 1, RT.4 rw5/RW.rt4 rw5, rt4 rw5, Kec. Candisari, Kota Semarang, Jawa Tengah 50252",
+    "lat": -7.0107288,
+    "lng": 110.4186458
+  },
+  {
+    "name": "Puskesmas Pandanaran",
+    "category": "Kesehatan",
+    "description": "Puskesmas Pandanaran",
+    "address": "Jl. Pandanaran No.79, Mugassari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50244",
+    "lat": -6.9869932,
+    "lng": 110.4146663
+  },
+  {
+    "name": "Klinik Rahb Indosehat",
+    "category": "Kesehatan",
+    "description": "Klinik Rahb Indosehat",
+    "address": "Jl. Anjasmoro Raya No.38 A / 7, Karangayu, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50142",
+    "lat": -6.9780312,
+    "lng": 110.3907256
+  },
+  {
+    "name": "Klinik Nayaka Husada 01 Karang Ayu",
+    "category": "Kesehatan",
+    "description": "Klinik Nayaka Husada 01 Karang Ayu",
+    "address": "Jl. Jenderal Sudirman No.187-189, Karangayu, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50149",
+    "lat": -6.9814696,
+    "lng": 110.3945357
+  },
+  {
+    "name": "Posyandu Melati RW IV",
+    "category": "Kesehatan",
+    "description": "Posyandu Melati RW IV",
+    "address": "Jl. Papandayan No.10, Gajahmungkur, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah 50232",
+    "lat": -7.0112067,
+    "lng": 110.4138476
+  },
+  {
+    "name": "Klinik Mardi Saras",
+    "category": "Kesehatan",
+    "description": "Klinik Mardi Saras",
+    "address": "Jl. Tambak Dalam Raya No.57, Sawah Besar, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50166",
+    "lat": -6.9728136,
+    "lng": 110.4457377
+  },
+  {
+    "name": "Masjid Baiturrachim",
+    "category": "Ibadah",
+    "description": "Masjid Baiturrachim",
+    "address": "Jl. HOS Cokroaminoto No.12, Barusari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50245",
+    "lat": -6.9878342,
+    "lng": 110.406828
+  },
+  {
+    "name": "Klinik Pratama Yayasan Sosial Soegijapranata",
+    "category": "Kesehatan",
+    "description": "Klinik Pratama Yayasan Sosial Soegijapranata",
+    "address": "Jl. DR. Sutomo, Randusari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50244",
+    "lat": -6.9860395,
+    "lng": 110.4097841
+  },
+  {
+    "name": "Klinik Bangkong",
+    "category": "Kesehatan",
+    "description": "Klinik Bangkong",
+    "address": "Ruko Bangkong Plaza, Karangtempel, Jl. Brigjen Katamso No.A9, Peterongan, Kec. Semarang Tim., Kota Semarang, Jawa Tengah 50232",
+    "lat": -6.9947557,
+    "lng": 110.4327035
+  },
+  {
+    "name": "Yayasan Terang Bagi Sejahtera Bangsa",
+    "category": "Pendidikan",
+    "description": "Yayasan Terang Bagi Sejahtera Bangsa",
+    "address": "Komplek Grand Marina A1, Jl. Ariloka, Tawangsari, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50144",
+    "lat": -6.9546539,
+    "lng": 110.392874
+  },
+  {
+    "name": "Akademi Entrepreneurship Terang Bangsa",
+    "category": "Pendidikan",
+    "description": "Akademi Entrepreneurship Terang Bangsa",
+    "address": "Jalan Arteri Utara, Kompleks Grand Marina, Tawangsari, Semarang Barat, Kota Semarang, Jawa Tengah 50144",
+    "lat": -6.9546978,
+    "lng": 110.3925079
+  },
+  {
+    "name": "Jemaat Kristen Indonesia Puri Marina",
+    "category": "Ibadah",
+    "description": "Jemaat Kristen Indonesia Puri Marina",
+    "address": "Jl. Puri Anjasmoro No.15, Tawangsari, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50144",
+    "lat": -6.9664365,
+    "lng": 110.3908436
+  },
+  {
+    "name": "Bethani Kasih Karunia",
+    "category": "Ibadah",
+    "description": "Bethani Kasih Karunia",
+    "address": "Jl. Anjasmoro Raya, Tawangsari, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50144",
+    "lat": -6.9663008,
+    "lng": 110.390389
+  },
+  {
+    "name": "Dinas Arsip dan Perpustakaan Kota Semarang",
+    "category": "Perpustakaan",
+    "description": "Dinas Arsip dan Perpustakaan Kota Semarang",
+    "address": "Jl. Prof. Soedarto No.116, Sumurboto, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50269",
+    "lat": -7.05295639,
+    "lng": 110.428216
+  },
+  {
+    "name": "SMK Theresiana",
+    "category": "Pendidikan",
+    "description": "SMK Theresiana",
+    "address": "Jl. Gajahmada No.91, Miroto, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50134",
+    "lat": -6.9811967,
+    "lng": 110.4208669
+  },
+  {
+    "name": "Musala Babussalam",
+    "category": "Ibadah",
+    "description": "Musala Babussalam",
+    "address": "Jl. Jomblang Sari, Jomblang, Kec. Candisari, Kota Semarang, Jawa Tengah 50256",
+    "lat": -7.009903,
+    "lng": 110.4346675
+  },
+  {
+    "name": "GBI Jomblang",
+    "category": "Ibadah",
+    "description": "GBI Jomblang",
+    "address": "Metro Sport Club, Jl. MT. Haryono 1016, Lamper Kidul, Semarang Selatan, Semarang City, Central Java 50249",
+    "lat": -7.0080947,
+    "lng": 110.4328912
+  },
+  {
+    "name": "Dinas Koperasi dan UKM Kota Semarang",
+    "category": "Pemerintah",
+    "description": "Dinas Koperasi dan UKM Kota Semarang",
+    "address": "Jl. Pemuda No.214, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132",
+    "lat": -6.9830856,
+    "lng": 110.4101904
+  },
+  {
+    "name": "Dinas Perindustrian Kota Semarang",
+    "category": "Pemerintah",
+    "description": "Dinas Perindustrian Kota Semarang",
+    "address": "Gedung Pandanaran, Jl. Pemuda No.175 Lantai 4, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132",
+    "lat": -6.9829821,
+    "lng": 110.4099889
+  },
+  {
+    "name": "Dinas Perikanan Kota Semarang",
+    "category": "Pemerintah",
+    "description": "Dinas Perikanan Kota Semarang",
+    "address": "Jl. Pemuda No.175 Lantai 3, Sekayu, Semarang Tengah, Semarang City, Central Java 50132",
+    "lat": -6.9831431,
+    "lng": 110.410129
+  },
+  {
+    "name": "Dinas Kebudayaan dan Pariwisata Kota Semarang",
+    "category": "Pemerintah",
+    "description": "Dinas Kebudayaan dan Pariwisata Kota Semarang",
+    "address": "Jl. Pemuda No.175, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132",
+    "lat": -6.98323825,
+    "lng": 110.4101661
+  },
+  {
+    "name": "Klinik Pratama",
+    "category": "Kesehatan",
+    "description": "Klinik Pratama",
+    "address": "Jalan Dewi Sartika I",
+    "lat": -7.0199335,
+    "lng": 110.388728
+  },
+  {
+    "name": "Klinik Aulia Fawwaz",
+    "category": "Kesehatan",
+    "description": "Klinik Aulia Fawwaz",
+    "address": "Jalan Dewi Sartika I",
+    "lat": -7.0198384,
+    "lng": 110.388679
+  },
+  {
+    "name": "Klinik Mardi Mulya VI",
+    "category": "Kesehatan",
+    "description": "Klinik Mardi Mulya VI",
+    "address": "Jalan Abdul Rahman Saleh No. 150",
+    "lat": -6.996397,
+    "lng": 110.3801886
+  },
+  {
+    "name": "Posyandu Balita dan Lansia Melati II",
+    "category": "Kesehatan",
+    "description": "Posyandu Balita dan Lansia Melati II",
+    "address": "Jalan Taman Sri Rejeki RT 07 RW 02",
+    "lat": -6.991389,
+    "lng": 110.3831892
+  },
+  {
+    "name": "SMK PIKA Semarang",
+    "category": "Pendidikan",
+    "description": "SMK PIKA Semarang",
+    "address": "Jalan Imam Bonjol No. 96",
+    "lat": -6.9729514,
+    "lng": 110.4169321
+  },
+  {
+    "name": "Posyandu Bukit Bunga",
+    "category": "Kesehatan",
+    "description": "Posyandu Bukit Bunga",
+    "address": "Jalan Alamanda Blok B",
+    "lat": -7.043828,
+    "lng": 110.442617
+  },
+  {
+    "name": "Posyandu Mutiara RW VI",
+    "category": "Kesehatan",
+    "description": "Posyandu Mutiara RW VI",
+    "address": "Jalan Singa III",
+    "lat": -7.0037261,
+    "lng": 110.4556941
+  },
+  {
+    "name": "Klinik Warga Utama",
+    "category": "Kesehatan",
+    "description": "Klinik Warga Utama",
+    "address": "Jalan Jembawan Raya No. 8-12",
+    "lat": -6.9850011,
+    "lng": 110.3770638
+  },
+  {
+    "name": "Unit Layanan Paspor Kantor Imigrasi Semarang",
+    "category": "Pemerintah",
+    "description": "Unit Layanan Paspor Kantor Imigrasi Semarang",
+    "address": "Jalan Gadjah Mada No. 135",
+    "lat": -6.9881782,
+    "lng": 110.4224049
+  },
+  {
+    "name": "Posyandu Dahlia dan Posyandu Lansia Sedap Malam",
+    "category": "Kesehatan",
+    "description": "Posyandu Dahlia dan Posyandu Lansia Sedap Malam",
+    "address": "Tidak diketahui",
+    "lat": -7.005728,
+    "lng": 110.4578083
+  },
+  {
+    "name": "Posyandu Balita Ku Sayang",
+    "category": "Kesehatan",
+    "description": "Posyandu Balita Ku Sayang",
+    "address": "Tidak diketahui",
+    "lat": -7.0202487,
+    "lng": 110.442059
+  },
+  {
+    "name": "Posyandu Model Nusa Indah",
+    "category": "Kesehatan",
+    "description": "Posyandu Model Nusa Indah",
+    "address": "Jalan Watugunung I",
+    "lat": -6.9817731,
+    "lng": 110.3692967
+  },
+  {
+    "name": "UPPD Kota Semarang III",
+    "category": "Pemerintah",
+    "description": "UPPD Kota Semarang III",
+    "address": "Jalan Hanoman Raya No. 2",
+    "lat": -6.9864481,
+    "lng": 110.373833
+  },
+  {
+    "name": "Posyandu Sedap Malam RW 03",
+    "category": "Kesehatan",
+    "description": "Posyandu Sedap Malam RW 03",
+    "address": "Jalan Cipta Karya",
+    "lat": -6.991774,
+    "lng": 110.4307508
+  },
+  {
+    "name": "Universitas Islam Sultan Agung",
+    "category": "Pendidikan",
+    "description": "Universitas Islam Sultan Agung",
+    "address": "Jl. Kaligawe Raya No.Km.4, Terboyo Kulon, Kec. Genuk, Kota Semarang, Jawa Tengah 50112",
+    "lat": -6.95562595,
+    "lng": 110.4580913
+  }
+]

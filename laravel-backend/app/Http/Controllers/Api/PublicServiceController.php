@@ -67,13 +67,16 @@ class PublicServiceController extends Controller
     public function getInZone($search_id){
         $services = DB::table('public_services')
             ->join('walkability_zones', DB::raw('ST_Within(public_services.location, walkability_zones.zone_polygon)'), '=', DB::raw('true'))
+            ->join('service_categories', 'public_services.category_id', '=', 'service_categories.id')
             ->where('walkability_zones.search_id', $search_id)
             ->select(
                 'public_services.id',
                 'public_services.name',
                 'public_services.description',
                 DB::raw('ST_Y(location::geometry) as lat'),
-                DB::raw('ST_X(location::geometry) as lng')
+                DB::raw('ST_X(location::geometry) as lng'),
+                'public_services.category_id',
+                'service_categories.name as category_name'
             )
             ->get();
 
